@@ -2,7 +2,7 @@ $:.unshift(File.dirname(__FILE__)) unless
   $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
 require 'rubygems'
-gem 'soap4r'
+gem 'soap2r'
 
 require 'netsuite_client/soap_netsuite'
 require 'netsuite_client/string'
