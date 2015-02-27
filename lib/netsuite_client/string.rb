@@ -15,8 +15,8 @@ class String
       constant
     end
   else
-    def constantize(camel_cased_word) #:nodoc:
-      names = camel_cased_word.split('::')
+    def constantize(camel_cased_word = nil) #:nodoc:
+      names = (camel_cased_word || self).split('::')
       names.shift if names.empty? || names.first.empty?
 
       constant = Object
